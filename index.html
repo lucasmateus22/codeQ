@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-site">
             <div class="logo">
                 <h2>Conhecimentos Adquiridos com o Curso Profissionalizante de Bombeiro Civil</h2>
-            </div>  
+            </div>
+            <button class="button-theme" onclick="changerTheme()" id="theme"> <p id="dark">Dark</p> <p id="light">Light</p></button>
         </div>
 </header>
     <div class="content">
@@ -125,8 +129,10 @@
                         <p><span>QSP</span> Ponte.</p>
                     </div>
                 <footer class="history">
-                    <h5>História</h5>
-                    <p>Teve sua origem em 1909 pelo governo britanico, assinada em 1912 e efetivada em 1913 com um total de 45 códigos.</p>
+                    <h4>Resumo</h4>
+                    <p>Desenvolvido no início do século XX, o código internacional “Q” tinha o propósito de facilitar as comunicações entre os navios britânicos e suas partes relacionadas. Com o tempo, o código passou a ser utilizado como padrão entre comunicações de rádio em todo o mundo.
+
+                        Muitas pessoas conhecem parte do código, utilizando-o, inclusive em conversas por telefone, internet ou outros meios telemáticos, por recreação. Todavia, trata-se de um “dicionário” extenso que deve ser dominado por qualquer operador de rádio, civil ou militar.</p>
                 </footer>
             </article>
         </div>
@@ -134,8 +140,8 @@
 
     </div>
     <!-------------------------------------------------------------------------------------->
-    <nav class="menu-lateral">
-        <img src="" alt="">
+    <nav class="menu-lateral" id="menuS">
+        <img src="./img.png" alt="">
             <div class="input-pes">
                 
                 <input type="text">
@@ -148,8 +154,14 @@
             <li><a href="">Em construção</a></li>
             <li><a href="">Em construção</a></li>
         </ul>
+        <div class="footer-menu">
+            <a href="">link</a>
+        </div>
     </nav>
-    
-    <div class="button-side"><button class="menu-responsive" onclick=""><span>Menu</span></button></div>
+    <div class="button-side">
+        <button class="menu-responsive" onclick="sideMenu('menuS')"><span>Menu</span></button>
+        <div class="button-top" onclick="topButt()" id="top"><img src="./hel-removebg-preview.png" alt=""><p>Topo</p></div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
