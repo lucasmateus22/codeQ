@@ -22,12 +22,14 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 header{
+    display: flex;
+    flex-wrap: wrap;
     position: fixed;
     top: 0px;
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 70px;
+    min-height: 70px;
     padding: 1%;
     border: 1px solid rgb(255, 255, 255);
     background: rgb(255,255,255);
@@ -41,51 +43,36 @@ header .hour{
     font-size: 1em;
     font-weight: bold;
     position: fixed;
-    top: 1vw;
+    top: 3vw;
     left: 1vw;
     width: 15vw;
 }
-.header-site{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1vw;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-}
-.logo{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
 /*------------------------------ButtonMenu------------------------------------*/
-.menu-responsive{
+.menu-b{
     position: fixed;
-    bottom: 50.5%;
-    right: 0%;
+    top: 0;
+    left: 0;
     width: 90px;
     height: 50px;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 0px 80px 80px 80px;
     background-color: var(--CL1);
     border: 2px solid var(--CD3);
     transition: 1s;
 }
-.menu-responsive:hover{
+.menu-b:hover{
     transition: 0.8s;
-    background-color: var(--CL3);
+    background-color: rgb(55, 131, 218);
     cursor: pointer;
     transform: scale(1.1);
 }
-.menu-responsive span{
+.menu-b span{
     font-weight: bolder;
     padding: 10px;
-    border: 1px solid var(--CL1);
     border-radius: 20px;
     transition: 0.8s;
 }
-.menu-responsive:hover span{
-    color: var(--CD1);
-    border-color: var(--CD1);
+.menu-b:hover span{
+    color: var(--CL1);
 }
 
 /*------------------------ContentMenuSide--------------------------*/
