@@ -12,17 +12,21 @@
 </head>
 <body>
     <header>
+        <div class="hour"><p>Hora atual:  </p><p id="hor"></p></div>
+        
         <div class="header-site">
             <div class="logo">
                 <h2>Conhecimentos Adquiridos com o Curso Profissionalizante de Bombeiro Civil</h2>
-            </div>
-            <button class="button-theme" onclick="changerTheme()" id="theme"> <p id="dark">Dark</p> <p id="light">Light</p></button>
-        </div>
 </header>
     <div class="content">
         <div class="cod-q">
+            <h3>Código Q</h3>
+            <h4>Resumo</h4>
+                    <p>Desenvolvido no início do século XX, o código internacional “Q” tinha o propósito de facilitar as comunicações entre os navios britânicos e suas partes relacionadas. Com o tempo, o código passou a ser utilizado como padrão entre comunicações de rádio em todo o mundo.
+
+                        Muitas pessoas conhecem parte do código, utilizando-o, inclusive em conversas por telefone, internet ou outros meios telemáticos, por recreação. Todavia, trata-se de um “dicionário” extenso que deve ser dominado por qualquer operador de rádio, civil ou militar.</p>
             <article>
-                <h3>Código Q</h3>
+                
                     <div class="text-code">
                         <p><span>QAP</span> Na escuta.</p>
                         <p><span>QAM</span> Qual é a condição meteorológica?</p>
@@ -128,12 +132,6 @@
                         <p><span>QUY</span> Foi marcada a posição da embarcação de salvamento?</p>
                         <p><span>QSP</span> Ponte.</p>
                     </div>
-                <footer class="history">
-                    <h4>Resumo</h4>
-                    <p>Desenvolvido no início do século XX, o código internacional “Q” tinha o propósito de facilitar as comunicações entre os navios britânicos e suas partes relacionadas. Com o tempo, o código passou a ser utilizado como padrão entre comunicações de rádio em todo o mundo.
-
-                        Muitas pessoas conhecem parte do código, utilizando-o, inclusive em conversas por telefone, internet ou outros meios telemáticos, por recreação. Todavia, trata-se de um “dicionário” extenso que deve ser dominado por qualquer operador de rádio, civil ou militar.</p>
-                </footer>
             </article>
         </div>
 
@@ -142,10 +140,12 @@
     <!-------------------------------------------------------------------------------------->
     <nav class="menu-lateral" id="menuS">
         <img src="./img.png" alt="">
+         <button class="button-theme" onclick="changerTheme()" id="theme"> <p>Tema de cor</p></button>
             <div class="input-pes">
+                   
                 
-                <input type="text">
-                <button>Ok</button>
+               <input type="text"><button >Ok</button>
+                
             </div>
         <ul>
             <li><a href="">Em construção</a></li>
@@ -155,13 +155,14 @@
             <li><a href="">Em construção</a></li>
         </ul>
         <div class="footer-menu">
-            <a href="">link</a>
+            <a href="https://github.com/lucasmateus22">Meu Repositório</a>
         </div>
     </nav>
     <div class="button-side">
         <button class="menu-responsive" onclick="sideMenu('menuS')"><span>Menu</span></button>
         <div class="button-top" onclick="topButt()" id="top"><img src="./hel-removebg-preview.png" alt=""><p>Topo</p></div>
     </div>
+    <h4>Obrigado por participar, em breve este repositório será atualizado com links com mais conteúdos.</h4>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

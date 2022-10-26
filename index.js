@@ -1,36 +1,5 @@
 
-/** let elemente = document.querySelector('.menuS');
-element.classlist.replace('')
-
-
-
-const body = document.querySelector('body');
-function changercolor(){
-    if(
-        document.documentElement.classList.contains('dark')){
-            document.documentElement.classList.remove('dark');
-        }else{
-            document.documentElement.classList.add('dark');
-        }
-}
-document.documentElement.classList.add('dark');
-     
-
-window.onscroll=function(){scrollFunction()};
-
-function scrollFunction(){
-    if(document.body.scroll > 50 || document.documentElement.scrollTop > 50){
-        document.getElementById("btnScroll").style.display = "block";
-    }else{
-        document.getElementById("btnScroll").style.display = "none";
-    }
-}
-function topFunction(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-};
-
-
+/**    
 
 var myVar = setInterval(myTime, 1000);
 function myTime(){
@@ -43,6 +12,29 @@ function myTime(){
     document.getElementById("demo").innerHTML = displayDate;
 }
 */
+let hour = setInterval(myTime, 1000);
+function myTime(){
+    let h = new Date(), displayDate;
+    if(navigator.userAgent.toLocaleLowerCase().indexOf('firefox')> -1){
+        displayDate = h.toLocaleTimeString('pt-BR');
+    }else{
+        displayDate = h.toLocaleTimeString('pt-BR',{timeZone:'America/brasilia'});
+    }
+    document.getElementById("hor").innerText = displayDate;
+}
+
+const body = document.querySelector('body');
+function changerTheme(){
+    if(
+        document.documentElement.classList.contains('dark')
+    ){document.documentElement.classList.remove('dark');
+    }else{
+        document.documentElement.classList.add('dark');
+    }
+}
+document.documentElement.classList.add('dark')
+
+
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
 if(document.body.scroll >400 || document.documentElement.scrollTop > 400){
