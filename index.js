@@ -1,17 +1,4 @@
 
-/**    
-
-var myVar = setInterval(myTime, 1000);
-function myTime(){
-    var d = new Date(), displayDate;
-    if(navigator.userAgent.toLocaleLowerCase().indexOf('firefox') > -1){
-        displayDate = d.toLocaleTimeString('pt-BR');
-    }else{
-        displayDate = d.toLocaleTimeString('pt-BR', {timeZone: 'America/pernambuco'});
-    }
-    document.getElementById("demo").innerHTML = displayDate;
-}
-*/
 let hour = setInterval(myTime, 1000);
 function myTime(){
     let h = new Date(), displayDate;
