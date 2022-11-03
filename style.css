@@ -174,15 +174,20 @@ h3{
     height: 100vw;
     width: 21vw;
     background-color: var(--CL2);
-    animation: show 0.6s;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     border-left: 2px solid var(--CL1);
+    transition: 1s;
 }
 @keyframes show {
     0%{
-        right: -500vw;
+        right: -100vw;
+        transition: 1s;
     }
     100%{
         right: 0vw;
+        transition: 1s;
     }
 }
 .menu-lateral li{
